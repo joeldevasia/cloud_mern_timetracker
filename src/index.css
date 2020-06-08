@@ -11,3 +11,85 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+input[type=text],select{
+  width: 100%;
+  padding:12px 20px;
+  margin:8px 0;
+  display : inline-block;
+  border: 1px solid #1cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password],select{
+  width: 100%;
+  padding:12px 20px;
+  margin:8px 0;
+  display : inline-block;
+  border: 1px solid #1cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  width: 100%;
+  background-color: #7cc;
+  color:white;
+  align-self: center;
+  padding:15px 15px;
+  
+  border:none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form{
+  border-radius: 5px;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.form-label{
+  float: left;
+}
+
+/*Navbar Styliing*/
+.navbar-ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1cc;
+}
+.navbar-li{
+  float: right;
+}
+
+.navbar-li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar-li a:hover{
+  background-color: #90cccc;
+}
+/*Adding logo to navbar*/
+.navbar-logo{
+  float: left;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+  padding:10px;
+}
+
+.container-center{
+  grid-column: 6 / span 2;
+  vertical-align: middle;
+}
