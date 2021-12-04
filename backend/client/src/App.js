@@ -26,6 +26,8 @@ if (localStorage.jwtToken) {
     store.dispatch(logoutUser());
     window.location.href = "./login";
   }
+}else{
+  window.location.href = "./login";
 }
 
 class App extends Component{
@@ -35,6 +37,7 @@ class App extends Component{
         <Router>
           <div className="App">
             <Nav/>
+            
             <Route exact path="/Register" component={Register}/>
             <Route exact path="/Login" component={Login}/>
             <Switch>

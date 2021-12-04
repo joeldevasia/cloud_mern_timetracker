@@ -15,7 +15,10 @@ const Project = props => (
 )
 
 export default class allProjects extends Component {
-
+    onLogoutClick = e => {
+        e.preventDefault();
+        this.props.logoutUser();
+    };
     constructor(props){
         super(props)
         this.state={
@@ -44,7 +47,7 @@ export default class allProjects extends Component {
     
         <div style={{ height: "75vh" }} className="container valign-wrapper">
             <ul className="navbar-ul">                          
-                
+                <li className="navbar-li"><Link to="/" onClick={this.onLogoutClick}>Logout</Link></li>
                 <li className="navbar-li active"><Link to="/allProjects">All Projects</Link> </li>                 
                 <li className="navbar-li" ><Link to="/addProjects">Add Projects</Link></li>
                 <li className="navbar-li"><Link to="/dashboard">Dashboard</Link> </li>                 
