@@ -6,7 +6,7 @@ backend:
       commands:
         - cd backend
         - npm cache verify
-        - rm -rf node_modules
+        - npm install -g nodemon
         - npm install 
         
     build:
@@ -18,8 +18,6 @@ frontend:
     preBuild:
       commands:
         - cd backend/client
-        - npm cache verify
-        - rm -rf node_modules
         - npm install 
         
     build:
