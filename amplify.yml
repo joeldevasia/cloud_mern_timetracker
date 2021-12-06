@@ -11,6 +11,7 @@ backend:
         
     build:
       commands:
+        - cd backend
         - npm start
     
 frontend:
@@ -21,4 +22,5 @@ frontend:
         - npm install
     build:
       commands:
+        - cd backend/client
         - npm start
