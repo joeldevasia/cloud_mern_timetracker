@@ -5,7 +5,7 @@ backend:
     preBuild:
       commands:
         - cd backend
-        - npm install
+        - npm install --ignore-scripts
         
     build:
       commands:
@@ -16,7 +16,7 @@ frontend:
     preBuild:
       commands:
         - cd backend/client
-        - npm install
+        - npm install --ignore-scripts
         
     build:
       commands:
