@@ -7,7 +7,7 @@ backend:
         - cd backend
         - npm cache clean --force
         - rm -rf node_modules
-        - npm install -g nodemon --unsafe-perm=true --allow-root
+        - npm install 
         
     build:
       commands:
@@ -18,7 +18,7 @@ frontend:
     preBuild:
       commands:
         - cd backend/client
-        - npm install -g nodemon --unsafe-perm=true --allow-root
+        - npm install 
     build:
       commands:
         - npm start
