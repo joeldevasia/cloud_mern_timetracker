@@ -2,3 +2,4 @@
 backend/node_modules/
 backend/client/node_modules/
 backend/client/mern-time-tracker.code-workspace
+.vscode
