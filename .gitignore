@@ -3,3 +3,5 @@ backend/node_modules/
 backend/client/node_modules/
 backend/client/mern-time-tracker.code-workspace
 .vscode
+backend/client/package-lock.json
+backend/package-lock.json
