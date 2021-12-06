@@ -1,18 +1,5 @@
 version: 1
-env:
-  variables:
-    key: value
-backend:
-  phases:
-    preBuild:
-      commands:
-        - cd backend
-        - npm install
-        
-    build:
-      commands:
-        - npm start
-    
+
 frontend:
   phases:
     preBuild:
@@ -21,5 +8,6 @@ frontend:
         - npm install
     build:
       commands:
-        - cd backend/client
-        - npm start
+        - npm run build
+        - npm install -g serve
+        - serve -s build
