@@ -6,7 +6,6 @@ backend:
       commands:
         - cd backend
         - npm cache clean --force
-        - rm -rf node_modules
         - npm install 
         
     build:
