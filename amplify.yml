@@ -1,0 +1,23 @@
+version: 1
+
+backend:
+  phases:
+    preBuild:
+      commands:
+        - cd backend
+        - npm update
+        
+    build:
+      commands:
+        - npm start
+    
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd backend/client
+        - npm update
+        
+    build:
+      commands:
+        - npm start
