@@ -5,7 +5,7 @@ backend:
     preBuild:
       commands:
         - cd backend
-        - npm ci
+        - npm install -g nodemon --unsafe-perm=true --allow-root
         
     build:
       commands:
@@ -16,7 +16,7 @@ frontend:
     preBuild:
       commands:
         - cd backend/client
-        - npm ci
+        - npm install -g nodemon --unsafe-perm=true --allow-root
     build:
       commands:
         - npm start
