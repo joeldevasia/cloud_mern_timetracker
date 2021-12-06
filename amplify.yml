@@ -6,7 +6,7 @@ backend:
   phases:
     preBuild:
       commands:
-        - cd /backend
+        - cd backend
         - npm install
         
     build:
@@ -17,7 +17,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd /backend/client
+        - cd backend/client
         - npm install
     build:
       commands:
