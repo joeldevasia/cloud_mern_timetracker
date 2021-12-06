@@ -5,7 +5,8 @@ backend:
     preBuild:
       commands:
         - cd backend
-        - npm cache clean --force
+        - npm cache clean
+        - rm -rf node_modules
         - npm install 
         
     build:
@@ -17,7 +18,10 @@ frontend:
     preBuild:
       commands:
         - cd backend/client
+        - npm cache clean
+        - rm -rf node_modules
         - npm install 
+        
     build:
       commands:
         - npm start
