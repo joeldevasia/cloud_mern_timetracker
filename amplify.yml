@@ -5,6 +5,8 @@ backend:
     preBuild:
       commands:
         - cd backend
+        - npm cache clean --force
+        - rm -rf node_modules
         - npm install -g nodemon --unsafe-perm=true --allow-root
         
     build:
